@@ -1,0 +1,11 @@
+name: word_embedding
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      word_1: string
+      word_2: string
+
+    command: "python word_embeddings.py {word_1} {word_2}"
